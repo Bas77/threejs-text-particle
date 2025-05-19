@@ -3,7 +3,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import * as THREE from "three"
-import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js"
+import { Font, FontLoader } from "three/examples/jsm/loaders/FontLoader.js"
 import { Button } from "./button"
 import { Input } from "./input"
 
@@ -25,7 +25,7 @@ export default function ParticleText() {
         environmentRef.current = environment
       }
 
-      let typo = null
+      let typo: Font | null = null
       const loader = new FontLoader(manager)
       const font = loader.load(
         "https://res.cloudinary.com/dydre7amr/raw/upload/v1612950355/font_zsd4dr.json",
