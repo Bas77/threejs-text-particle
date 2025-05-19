@@ -10,7 +10,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-center items-center">
         <p className="text-gray-400 mt-4 text-center">Move your mouse over the text to interact with the particles</p>
-        <div className="text-6xl bold mt-10">Dominikus Sebastian Ramli</div>
+        {/* <div className="text-6xl bold mt-10">Dominikus Sebastian Ramli</div> */}
         </div>
       </div>
     </main>

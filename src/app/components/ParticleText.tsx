@@ -433,7 +433,7 @@ class CreateParticles {
 
     const vertexShader = document.getElementById("vertexshader")!.textContent
     const fragmentShader = document.getElementById("fragmentshader")!.textContent
-
+    if(!vertexShader || !fragmentShader) return
     const material = new THREE.ShaderMaterial({
       uniforms: {
         color: { value: new THREE.Color(0xffffff) },
